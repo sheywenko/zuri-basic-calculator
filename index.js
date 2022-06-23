@@ -1,5 +1,5 @@
-let value1 = parseInt(prompt("Enter your first number"));
-let value2 = parseInt(prompt("Enter your second number"));
+let value1 = Number(prompt("Enter your first number"));
+let value2 = Number(prompt("Enter your second number"));
 let operator = prompt("Enter your preferred operator(+, -, *, /)");
 
 const result = (a, b) => {
@@ -16,5 +16,4 @@ const result = (a, b) => {
   }
 };
 
-alert(`The result is: ${result(value1, value2)}`);
-
+alert(`${value1} ${operator} ${value2} = ${result(value1, value2)}`);
